@@ -32,11 +32,9 @@ function App() {
         setIsLoading(false);
       }
     }
-setTimeout(() => {
-
-
-    (async () => await fetchItems())();
-}, 2000)
+    setTimeout(() => {
+      (async () => await fetchItems())();
+    }, 3500)
   }, [])
 
 
@@ -57,7 +55,6 @@ setTimeout(() => {
     const result = await apiRequest(API_URL, postOptions);
     if (result) setFetchError(result);
 
-
   }
 
   const handleCheck = async (id) => {
@@ -67,14 +64,13 @@ setTimeout(() => {
     } : item);
     setItems(listItems);
 
-
     const myItem = listItems.filter((item) => item.id === id);
     const updateOptions = {
       method: 'PATCH',
       headers: {
-          'Content-Type': 'application/json'
+        'Content-Type': 'application/json'
       },
-      body: JSON.stringify({ checked: myItem[0].checked})
+      body: JSON.stringify({ checked: myItem[0].checked })
     };
     const reqUrl = `${API_URL}/${id}`;
     const result = await apiRequest(reqUrl, updateOptions);
@@ -86,11 +82,11 @@ setTimeout(() => {
     setItems(listItems);
 
 
-const deleteOptions = { method: 'DELETE' };
+    const deleteOptions = { method: 'DELETE' };
 
-const reqUrl = `${API_URL}/${id}`;
-const result = await apiRequest(reqUrl, deleteOptions);
-if (result) setFetchError(result);
+    const reqUrl = `${API_URL}/${id}`;
+    const result = await apiRequest(reqUrl, deleteOptions);
+    if (result) setFetchError(result);
 
   }
 
@@ -119,7 +115,7 @@ if (result) setFetchError(result);
 
       <main>
         {isLoading && <p>Loading Items..</p>}
-        {fetchError && <p style={{ color:"red"}}>{`Error: ${fetchError}`}</p>}
+        {fetchError && <p style={{ color: "red" }}>{`Error: ${fetchError}`}</p>}
         {!fetchError && !isLoading && <Content
           items={items.filter(item => ((item.item).toLowerCase()).includes
             (search.toLowerCase()))}

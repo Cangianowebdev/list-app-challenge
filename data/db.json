@@ -1,29 +1,19 @@
 {
   "items": [
     {
-      "id": 5,
-      "checked": false,
-      "item": "Hi Jovani!"
-    },
-    {
-      "id": 6,
-      "checked": false,
-      "item": "Hi Lucas!"
-    },
-    {
-      "id": 7,
-      "checked": false,
-      "item": "Pizza"
-    },
-    {
       "id": 8,
       "checked": false,
       "item": "French Fries"
     },
     {
       "id": 9,
-      "checked": false,
+      "checked": true,
       "item": "Ice Cream"
+    },
+    {
+      "id": 10,
+      "checked": false,
+      "item": "Pizza"
     }
   ]
 }
