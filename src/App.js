@@ -8,7 +8,7 @@ import apiRequest from "./apiRequest";
 
 function App() {
 
-  const API_URL = 'http://localhost:3500/items';
+  const API_URL = 'https://jsonplaceholder.typicode.com/posts';
 
   const [items, setItems] = useState([]);
   const [newItem, setNewItem] = useState('');

@@ -1,11 +1,6 @@
 {
   "items": [
     {
-      "id": 8,
-      "checked": false,
-      "item": "French Fries"
-    },
-    {
       "id": 9,
       "checked": true,
       "item": "Ice Cream"
@@ -14,6 +9,21 @@
       "id": 10,
       "checked": false,
       "item": "Pizza"
+    },
+    {
+      "id": 11,
+      "checked": false,
+      "item": "Coffee Ice Cream for Noel"
+    },
+    {
+      "id": 12,
+      "checked": false,
+      "item": "French Fries for Jovani"
+    },
+    {
+      "id": 13,
+      "checked": false,
+      "item": "Chicken Nuggies for Lucas"
     }
   ]
 }
