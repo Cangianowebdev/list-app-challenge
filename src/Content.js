@@ -1,6 +1,6 @@
 import ItemList from './ItemList';
 
-export const Content = ({items, handleCheck, handleDelete}) => {
+const Content = ({items, handleCheck, handleDelete}) => {
     
     return (
 

@@ -27,7 +27,7 @@ function App() {
         setItems(listItems);
         setFetchError(null);
       } catch (err) {
-        setFetchError(err.message)
+        setFetchError(err.message);
       } finally {
         setIsLoading(false);
       }
@@ -36,7 +36,7 @@ setTimeout(() => {
 
 
     (async () => await fetchItems())();
-}, 1200)
+}, 2000)
   }, [])
 
 
