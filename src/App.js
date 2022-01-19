@@ -34,7 +34,7 @@ function App() {
     }
     setTimeout(() => {
       (async () => await fetchItems())();
-    }, 3500)
+    }, 2000)
   }, [])
 
 
